@@ -47,5 +47,5 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
-.Assets/NatureManufacture Assets
-.Packages/packages-lock-json
+Assets/NatureManufacture Assets
+Packages/packages-lock-json
