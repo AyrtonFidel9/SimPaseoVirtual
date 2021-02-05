@@ -10,8 +10,8 @@ public class CargarAvatar : MonoBehaviour
     void Start()
     {
         EleccionAvatar eleccion = new EleccionAvatar();
+        Debug.Log(eleccion.avatar);
         cargarAvatar(eleccion.avatar);
-        
     }
 
     // Update is called once per frame

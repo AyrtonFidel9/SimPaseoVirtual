@@ -5,7 +5,7 @@ using UnityEngine;
 public class EleccionAvatar : MonoBehaviour
 {
     public static EleccionAvatar Eleavatar;
-    public int avatar = 0; //0 - Hombre y 1 - Mujer
+    public int avatar; //0 - Hombre y 1 - Mujer
     public GameObject hombre;
     public GameObject mujer;
     void Awake()
