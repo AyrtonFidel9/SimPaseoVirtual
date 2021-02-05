@@ -6,7 +6,6 @@ public class MoverPersonaje : MonoBehaviour
 {
     public float x;
     public float z;
-    public float xMouse;
     public CharacterController player;
     public Animator animacion;
     public float velocidadMovimiento;
@@ -42,8 +41,4 @@ public class MoverPersonaje : MonoBehaviour
         player.Move(velocidad * Time.deltaTime);
 
     }
-
-   
-
-
 }
