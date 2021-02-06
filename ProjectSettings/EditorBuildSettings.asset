@@ -4,5 +4,23 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/EleccionAvatar.unity
+    guid: 78d7491b319690145916bd38725211c8
+  - enabled: 1
+    path: Assets/Scenes/Ayuda.unity
+    guid: 228ea166af97ac94887fccdf10641692
+  - enabled: 1
+    path: Assets/Scenes/Ajustes.unity
+    guid: 89e3687aeb9c67f4cbbcfb3807160cd1
+  - enabled: 1
+    path: Assets/Scenes/Comentarios.unity
+    guid: 7db8626d686df8743a230f868e9a1c9a
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 7b80435b5eaf6f146bdf9bc963d02ed6
+  - enabled: 1
+    path: Assets/Scenes/Inicio.unity
+    guid: 7013fa9aa33caf74ab85a800afee9400
   m_configObjects: {}

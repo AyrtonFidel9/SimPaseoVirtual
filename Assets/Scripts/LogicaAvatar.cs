@@ -18,8 +18,6 @@ public class LogicaAvatar : MonoBehaviour
     {
         animacion = GetComponent<Animator>();
         velocidadRotacionMouse = velocidadRotacion;
-
-
     }
 
     // Update is called once per frame
@@ -32,5 +30,13 @@ public class LogicaAvatar : MonoBehaviour
         transform.Rotate(0, xMouse * velocidadRotacionMouse * Time.deltaTime, 0);
         animacion.SetFloat("VelX",x);
         animacion.SetFloat("VelY",y);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "NPCgradas")
+        {
+            Debug.Log("Choco con un NPC de las gradas");
+        }
     }
 }
