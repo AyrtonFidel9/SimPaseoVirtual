@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
   tags: []
+=======
+  tags: [NPC, NPCgradas, objetivolap]
+>>>>>>> parent of baba7bf... Merge branch 'MisionBaños_Darwin'
   layers:
   - Default
   - TransparentFX
