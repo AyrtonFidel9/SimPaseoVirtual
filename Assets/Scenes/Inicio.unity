@@ -7149,6 +7149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b05348df5f65f1d478c69da2e300d465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocidadMovimiento: 5
+  velocidadRotacion: 150
   x: 0
   z: 0
   player: {fileID: 0}
