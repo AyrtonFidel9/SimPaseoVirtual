@@ -36,6 +36,7 @@ public class CambiarPersonaje : MonoBehaviour
         personajes[index].SetActive(false);
         index = 1;
         personajes[index].SetActive(true);
+        Debug.Log(index.ToString());
     }
 
     public void pressMujer()
@@ -43,10 +44,12 @@ public class CambiarPersonaje : MonoBehaviour
         personajes[index].SetActive(false);
         index = 2;
         personajes[index].SetActive(true);
+        Debug.Log(index.ToString());
     }
 
     public void escenaInicio()
     {
+        Debug.Log(index.ToString());
         PlayerPrefs.SetInt("Eleccion",index);
         SceneManager.LoadScene("Inicio");
     }
