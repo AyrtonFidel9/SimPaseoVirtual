@@ -19,7 +19,7 @@ public class CambiarPersonaje : MonoBehaviour
             item.SetActive(false);
         }
 
-        if(personajes[index])
+        if (personajes[index])
         {
             personajes[index].SetActive(true);
         }
@@ -28,7 +28,7 @@ public class CambiarPersonaje : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void pressHombre()
@@ -36,7 +36,8 @@ public class CambiarPersonaje : MonoBehaviour
         personajes[index].SetActive(false);
         index = 1;
         personajes[index].SetActive(true);
-        Debug.Log(index.ToString());
+        personajes[3].SetActive(true);
+        personajes[4].SetActive(true);
     }
 
     public void pressMujer()
@@ -44,14 +45,26 @@ public class CambiarPersonaje : MonoBehaviour
         personajes[index].SetActive(false);
         index = 2;
         personajes[index].SetActive(true);
-        Debug.Log(index.ToString());
     }
 
     public void escenaInicio()
     {
-        Debug.Log(index.ToString());
-        PlayerPrefs.SetInt("Eleccion",index);
+        PlayerPrefs.SetInt("Eleccion 2", index);
+        PlayerPrefs.GetInt("NombrePlayer", 0);
         SceneManager.LoadScene("Inicio");
     }
 
+    public void escenaTutorial ()
+    {
+        PlayerPrefs.SetInt("Eleccion 2", index);
+        PlayerPrefs.GetInt("NombrePlayer", 0);
+        SceneManager.LoadScene("Tutorial");
+    }
+
+    public void escenaPresentacion()
+    {
+        PlayerPrefs.SetInt("Eleccion 2", index);
+        PlayerPrefs.GetInt("NombrePlayer", 0);
+        SceneManager.LoadScene("Presentacion");
+    }
 }
