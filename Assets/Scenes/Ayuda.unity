@@ -352,6 +352,7 @@ GameObject:
   - component: {fileID: 635246162}
   - component: {fileID: 635246161}
   - component: {fileID: 635246160}
+  - component: {fileID: 635246164}
   m_Layer: 5
   m_Name: btnInstrucciones
   m_TagString: Untagged
@@ -475,6 +476,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 635246158}
   m_CullTransparentMesh: 0
+--- !u!114 &635246164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635246158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1158557131}
+          m_TargetAssemblyTypeName: ControlCursor, Assembly-CSharp
+          m_MethodName: cambiarCursor
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: mano
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1158557131}
+          m_TargetAssemblyTypeName: ControlCursor, Assembly-CSharp
+          m_MethodName: cambiarCursor
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: normal
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &670824030
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,6 +747,7 @@ GameObject:
   - component: {fileID: 781320405}
   - component: {fileID: 781320404}
   - component: {fileID: 781320403}
+  - component: {fileID: 781320407}
   m_Layer: 5
   m_Name: btnQuienes
   m_TagString: Untagged
@@ -836,6 +883,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 781320401}
   m_CullTransparentMesh: 0
+--- !u!114 &781320407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781320401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1158557131}
+          m_TargetAssemblyTypeName: ControlCursor, Assembly-CSharp
+          m_MethodName: cambiarCursor
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: mano
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1158557131}
+          m_TargetAssemblyTypeName: ControlCursor, Assembly-CSharp
+          m_MethodName: cambiarCursor
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: normal
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1077689702
 GameObject:
   m_ObjectHideFlags: 0
@@ -970,6 +1062,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1077689702}
   m_CullTransparentMesh: 0
+--- !u!1 &1158557130
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1158557132}
+  - component: {fileID: 1158557131}
+  m_Layer: 0
+  m_Name: ScriptCursor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1158557131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158557130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 341af7f8f1f0ea445b46ecac13748530, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tamanioCursor: 50
+  cursorMano: {fileID: 2800000, guid: bf5803bdb1b1c7140b0c415cae89d14f, type: 3}
+  cursorNormal: {fileID: 2800000, guid: b1aa41fc1dc7c98419e6d55ab3d9bc5a, type: 3}
+--- !u!4 &1158557132
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158557130}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 360.52634, y: 190.09268, z: -111.88243}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1236753990
 GameObject:
   m_ObjectHideFlags: 0
@@ -1094,6 +1232,7 @@ GameObject:
   - component: {fileID: 1361233056}
   - component: {fileID: 1361233055}
   - component: {fileID: 1361233054}
+  - component: {fileID: 1361233058}
   m_Layer: 5
   m_Name: btnAcerca
   m_TagString: Untagged
@@ -1217,6 +1356,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1361233052}
   m_CullTransparentMesh: 0
+--- !u!114 &1361233058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361233052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1158557131}
+          m_TargetAssemblyTypeName: ControlCursor, Assembly-CSharp
+          m_MethodName: cambiarCursor
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: mano
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1158557131}
+          m_TargetAssemblyTypeName: ControlCursor, Assembly-CSharp
+          m_MethodName: cambiarCursor
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: normal
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1394220162
 GameObject:
   m_ObjectHideFlags: 0
@@ -1454,7 +1638,7 @@ Canvas:
   m_GameObject: {fileID: 1619322338}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
@@ -1707,6 +1891,7 @@ GameObject:
   - component: {fileID: 2002294580}
   - component: {fileID: 2002294579}
   - component: {fileID: 2002294578}
+  - component: {fileID: 2002294581}
   m_Layer: 5
   m_Name: btnAtras
   m_TagString: Untagged
@@ -1827,6 +2012,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2002294576}
   m_CullTransparentMesh: 0
+--- !u!114 &2002294581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002294576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1158557131}
+          m_TargetAssemblyTypeName: ControlCursor, Assembly-CSharp
+          m_MethodName: cambiarCursor
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: mano
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1158557131}
+          m_TargetAssemblyTypeName: ControlCursor, Assembly-CSharp
+          m_MethodName: cambiarCursor
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: normal
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &2128045662
 GameObject:
   m_ObjectHideFlags: 0

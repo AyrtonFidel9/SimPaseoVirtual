@@ -157,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -167.7, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -160.1, y: 0.55}
+  m_SizeDelta: {x: 101.97835, y: 115.100006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &84520791
 MonoBehaviour:
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 185cb11c5ff935a4abe211a11dc74ed9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d8caa6a08364ced49883a66519fe7479, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -440,7 +440,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 185cb11c5ff935a4abe211a11dc74ed9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d9f37dd71edff5949aad5d33eb857e80, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -624,6 +624,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 308999198}
   m_CullTransparentMesh: 0
+--- !u!1 &379644787
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 379644789}
+  - component: {fileID: 379644788}
+  m_Layer: 0
+  m_Name: ScriptCursor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &379644788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379644787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 341af7f8f1f0ea445b46ecac13748530, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tamanioCursor: 50
+  cursorMano: {fileID: 2800000, guid: bf5803bdb1b1c7140b0c415cae89d14f, type: 3}
+  cursorNormal: {fileID: 2800000, guid: b1aa41fc1dc7c98419e6d55ab3d9bc5a, type: 3}
+--- !u!4 &379644789
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379644787}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 360.52634, y: 190.09268, z: -111.88243}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &451392492
 GameObject:
   m_ObjectHideFlags: 0
@@ -1137,8 +1183,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -167.7, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -160.1, y: 0.00000071526}
+  m_SizeDelta: {x: 114.922806, y: 116.19264}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &735687775
 MonoBehaviour:
@@ -1160,7 +1206,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 185cb11c5ff935a4abe211a11dc74ed9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8a2f9e0cf0913fe4594fb1140f3b13c8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1948,7 +1994,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1236753990}
   m_LocalRotation: {x: 0.008196005, y: -0, z: -0, w: -0.99996644}
-  m_LocalPosition: {x: 0, y: 0, z: -132}
+  m_LocalPosition: {x: 0, y: 0, z: -18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 670824031}
@@ -2464,8 +2510,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -167.7, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -159.7, y: 0.0000095367}
+  m_SizeDelta: {x: 113.269226, y: 116.58649}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1460234338
 MonoBehaviour:
@@ -2487,7 +2533,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 185cb11c5ff935a4abe211a11dc74ed9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bff8b987c0645d24883ffc39146baa3b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3013,8 +3059,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -167.7, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -158.6, y: 0.000014275}
+  m_SizeDelta: {x: 103.814575, y: 121.4034}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1763188500
 MonoBehaviour:
@@ -3036,7 +3082,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 185cb11c5ff935a4abe211a11dc74ed9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8f4f506a8964d1c458982de7c5cf0033, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3158,6 +3204,7 @@ GameObject:
   - component: {fileID: 2002294580}
   - component: {fileID: 2002294579}
   - component: {fileID: 2002294578}
+  - component: {fileID: 2002294581}
   m_Layer: 5
   m_Name: btnAtras
   m_TagString: Untagged
@@ -3278,6 +3325,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2002294576}
   m_CullTransparentMesh: 0
+--- !u!114 &2002294581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002294576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 379644788}
+          m_TargetAssemblyTypeName: ControlCursor, Assembly-CSharp
+          m_MethodName: cambiarCursor
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: mano
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 379644788}
+          m_TargetAssemblyTypeName: ControlCursor, Assembly-CSharp
+          m_MethodName: cambiarCursor
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: normal
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &2086427609
 GameObject:
   m_ObjectHideFlags: 0

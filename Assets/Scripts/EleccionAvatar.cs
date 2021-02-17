@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EleccionAvatar : MonoBehaviour
 {
@@ -10,12 +11,19 @@ public class EleccionAvatar : MonoBehaviour
     public GameObject mujer;
     void Awake()
     {
-        if(Eleavatar == null)
+        if(SceneManager.GetActiveScene().name != "IngresarNombre")
         {
-            Eleavatar = this;
-            DontDestroyOnLoad(gameObject);
+            if (Eleavatar == null)
+            {
+                Eleavatar = this;
+                DontDestroyOnLoad(gameObject);
+            }
+            else if (Eleavatar != this)
+            {
+                Destroy(gameObject);
+            }
         }
-        else if (Eleavatar != this)
+        else
         {
             Destroy(gameObject);
         }
@@ -25,12 +33,18 @@ public class EleccionAvatar : MonoBehaviour
     void Start()
     {
         cargarAvatar();
+        if (SceneManager.GetActiveScene().name == "IngresarNombre")
+        {
+            Destroy(gameObject);
+        }
     }
-
     // Update is called once per frame
     void Update()
     {
-        
+        if (SceneManager.GetActiveScene().name == "IngresarNombre")
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void eleccionMiAvatar (string eleccion)

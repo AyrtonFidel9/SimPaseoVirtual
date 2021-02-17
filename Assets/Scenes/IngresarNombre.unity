@@ -123,6 +123,52 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &223524272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 223524274}
+  - component: {fileID: 223524273}
+  m_Layer: 0
+  m_Name: ScriptCursor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &223524273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223524272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 341af7f8f1f0ea445b46ecac13748530, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tamanioCursor: 50
+  cursorMano: {fileID: 2800000, guid: bf5803bdb1b1c7140b0c415cae89d14f, type: 3}
+  cursorNormal: {fileID: 2800000, guid: b1aa41fc1dc7c98419e6d55ab3d9bc5a, type: 3}
+--- !u!4 &223524274
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223524272}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 360.52634, y: 190.09268, z: -111.88243}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &296484985
 GameObject:
   m_ObjectHideFlags: 0
@@ -934,8 +980,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -6, y: 0}
-  m_SizeDelta: {x: -306.04147, y: -151.99403}
+  m_AnchoredPosition: {x: 6, y: 5}
+  m_SizeDelta: {x: -444.83978, y: -236.00354}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &741413304
 MonoBehaviour:
@@ -1164,6 +1210,7 @@ GameObject:
   - component: {fileID: 976542919}
   - component: {fileID: 976542918}
   - component: {fileID: 976542917}
+  - component: {fileID: 976542920}
   m_Layer: 5
   m_Name: btnContinuar
   m_TagString: Untagged
@@ -1188,7 +1235,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.99, y: -12.34}
+  m_AnchoredPosition: {x: 0.99, y: -20.444}
   m_SizeDelta: {x: 161.97968, y: 40.88826}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &976542917
@@ -1296,6 +1343,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 976542915}
   m_CullTransparentMesh: 0
+--- !u!114 &976542920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976542915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 223524273}
+          m_TargetAssemblyTypeName: ControlCursor, Assembly-CSharp
+          m_MethodName: cambiarCursor
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: mano
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 223524273}
+          m_TargetAssemblyTypeName: ControlCursor, Assembly-CSharp
+          m_MethodName: cambiarCursor
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: normal
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &998591605
 GameObject:
   m_ObjectHideFlags: 0
@@ -1344,7 +1436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1363,8 +1455,8 @@ Canvas:
   m_GameObject: {fileID: 998591605}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 472804918}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1504,6 +1596,7 @@ GameObject:
   - component: {fileID: 1249489937}
   - component: {fileID: 1249489935}
   - component: {fileID: 1249489936}
+  - component: {fileID: 1249489938}
   m_Layer: 5
   m_Name: btnRegresar
   m_TagString: Untagged
@@ -1529,7 +1622,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -209.4, y: 140}
+  m_AnchoredPosition: {x: -310, y: 196}
   m_SizeDelta: {x: 157.08563, y: 38.04297}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1249489935
@@ -1625,6 +1718,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249489933}
   m_CullTransparentMesh: 0
+--- !u!114 &1249489938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249489933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 223524273}
+          m_TargetAssemblyTypeName: ControlCursor, Assembly-CSharp
+          m_MethodName: cambiarCursor
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: mano
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 223524273}
+          m_TargetAssemblyTypeName: ControlCursor, Assembly-CSharp
+          m_MethodName: cambiarCursor
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: normal
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1259409186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1660,8 +1798,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -106}
-  m_SizeDelta: {x: -57.371704, y: -254.83711}
+  m_AnchoredPosition: {x: 0, y: -143.40001}
+  m_SizeDelta: {x: -57.371704, y: -329.5677}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1259409188
 MonoBehaviour:
@@ -2042,8 +2180,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 601, y: 338}
+  m_AnchoredPosition: {x: 0.022649, y: 0.0038509}
+  m_SizeDelta: {x: 800.0453, y: 449.4311}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1797323580
 MonoBehaviour:
@@ -2569,8 +2707,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000030517578, y: 61}
-  m_SizeDelta: {x: 321.07678, y: 43.330505}
+  m_AnchoredPosition: {x: 0.98998, y: 57}
+  m_SizeDelta: {x: 401.51758, y: 43.330505}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7733774511260484198
 GameObject:

@@ -9,19 +9,65 @@ public class DesactivarAvatar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(SceneManager.GetActiveScene().name);
-        if(SceneManager.GetActiveScene().name == "Presentacion")
-        {
-            avatar.SetActive(false);
-        }
+        desactivarCamara();
+        //string escena = Application.loadedLevelName;
+        ////Debug.Log(SceneManager.GetActiveScene().name);
+        //if (escena == "Presentacion")
+        //{
+        //    avatar.SetActive(false);
+        //}
+        //else if (escena == "Inicio")
+        //{
+        //    avatar.SetActive(true);
+        //}
+
+        //Debug.Log("escena: "+escena);
     }
 
     // Update is called once per frame
     void Update()
     {
+        desactivarCamara();
+        //string escena = Application.loadedLevelName;
+        //Debug.Log("escena: " + escena);
+        ////Debug.Log(SceneManager.GetActiveScene().name);
+        //if (escena == "Presentacion")
+        //{
+        //    avatar.SetActive(false);
+        //}
+        //else if (escena == "Inicio")
+        //{
+        //    avatar.SetActive(true);
+        //}
+    }   
+    void desactivarCamara()
+    {
         if (SceneManager.GetActiveScene().name == "Presentacion")
         {
-            avatar.SetActive(false);
+            //desactivar pantallas del tutorial
+            avatar.transform.GetChild(3).gameObject.SetActive(false);
+            avatar.transform.GetChild(4).gameObject.SetActive(false);
+
+            //desactivar pantallas para el juego
+            avatar.transform.GetChild(5).gameObject.SetActive(false);
+            avatar.transform.GetChild(6).gameObject.SetActive(false);
+
+            avatar.transform.GetChild(1).gameObject.transform.GetChild(9).gameObject.SetActive(false);
+            avatar.transform.GetChild(1).gameObject.transform.GetChild(10).gameObject.SetActive(false);
+            avatar.transform.GetChild(2).gameObject.transform.GetChild(7).gameObject.SetActive(false);
+            avatar.transform.GetChild(2).gameObject.transform.GetChild(8).gameObject.SetActive(false);
+        }
+        else if (SceneManager.GetActiveScene().name == "Inicio")
+        {
+            avatar.transform.GetChild(1).gameObject.transform.GetChild(9).gameObject.SetActive(true);
+            avatar.transform.GetChild(1).gameObject.transform.GetChild(10).gameObject.SetActive(true);
+            avatar.transform.GetChild(2).gameObject.transform.GetChild(7).gameObject.SetActive(true);
+            avatar.transform.GetChild(2).gameObject.transform.GetChild(8).gameObject.SetActive(true);
+
+            //activar pantallas para el juego
+            avatar.transform.GetChild(5).gameObject.SetActive(true);
+            avatar.transform.GetChild(6).gameObject.SetActive(true);
         }
     }
+
 }

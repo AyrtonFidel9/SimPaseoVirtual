@@ -23,6 +23,7 @@ public class CambiarPersonaje : MonoBehaviour
         {
             personajes[index].SetActive(true);
         }
+
     }
 
     // Update is called once per frame
@@ -38,6 +39,7 @@ public class CambiarPersonaje : MonoBehaviour
         personajes[index].SetActive(true);
         personajes[3].SetActive(true);
         personajes[4].SetActive(true);
+     
     }
 
     public void pressMujer()
@@ -45,6 +47,8 @@ public class CambiarPersonaje : MonoBehaviour
         personajes[index].SetActive(false);
         index = 2;
         personajes[index].SetActive(true);
+        personajes[5].SetActive(true);
+        personajes[6].SetActive(true);
     }
 
     public void escenaInicio()
@@ -67,4 +71,21 @@ public class CambiarPersonaje : MonoBehaviour
         PlayerPrefs.GetInt("NombrePlayer", 0);
         SceneManager.LoadScene("Presentacion");
     }
+
+    //void desactivarCamara()
+    //{
+    //    if (SceneManager.GetActiveScene().name == "Presentacion")
+    //    {
+    //        personajes[3].SetActive(false);
+    //        personajes[4].SetActive(false);
+    //        personajes[5].SetActive(false);
+    //        personajes[6].SetActive(false);
+
+    //        personajes[1].transform.GetChild(9).gameObject.SetActive(false);
+    //        personajes[1].transform.GetChild(10).gameObject.SetActive(false);
+    //        personajes[2].transform.GetChild(7).gameObject.SetActive(false);
+    //        personajes[2].transform.GetChild(8).gameObject.SetActive(false);
+    //    }
+    //}
+
 }
