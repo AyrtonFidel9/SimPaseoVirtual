@@ -9,12 +9,12 @@ public class Temporizador : MonoBehaviour
 {
     public TMPro.TextMeshProUGUI txtTime;
     public float hora;
-    public float minutos;
+    public static float minutos;
     float msToWait;
     public bool isFin = false;
     public string retencionName;
     public ulong inicioTimer;
-    float segundosRestantes = 0.0f;
+    static float segundosRestantes = 0.0f;
 
     // Start is called before the first frame update
     void Start()

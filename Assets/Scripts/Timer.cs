@@ -11,7 +11,8 @@ public class Timer : MonoBehaviour
     public int segundos;
     public TMPro.TextMeshProUGUI txtTime;
 
-    private int m,s;
+    public static int m;
+    public static int s;
     // Start is called before the first frame update
 
     public void iniciarTimer()
@@ -30,13 +31,14 @@ public class Timer : MonoBehaviour
 
     public void actualizarTimer()
     {
-        Debug.Log("Me estoy actualizando");
         s--;
         if(s < 0)
         {
-            if(m == 0)
+            if(m <= 0)
             {
-                //programación para el fin del juego
+                Debug.Log("Fin del juego");
+                Time.timeScale = 0.0f;
+                return;
             }
             else{
                 m--;

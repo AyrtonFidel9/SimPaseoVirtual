@@ -37,9 +37,8 @@ public class CambiarPersonaje : MonoBehaviour
         personajes[index].SetActive(false);
         index = 1;
         personajes[index].SetActive(true);
-        personajes[3].SetActive(true);
-        personajes[4].SetActive(true);
-     
+        /* personajes[3].SetActive(true);
+        personajes[4].SetActive(true); */
     }
 
     public void pressMujer()
@@ -47,8 +46,8 @@ public class CambiarPersonaje : MonoBehaviour
         personajes[index].SetActive(false);
         index = 2;
         personajes[index].SetActive(true);
-        personajes[5].SetActive(true);
-        personajes[6].SetActive(true);
+        /* personajes[3].SetActive(true);
+        personajes[4].SetActive(true); */
     }
 
     public void escenaInicio()

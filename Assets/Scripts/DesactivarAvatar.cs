@@ -46,11 +46,9 @@ public class DesactivarAvatar : MonoBehaviour
         {
             //desactivar pantallas del tutorial
             avatar.transform.GetChild(3).gameObject.SetActive(false);
-            avatar.transform.GetChild(4).gameObject.SetActive(false);
-
             //desactivar pantallas para el juego
+            avatar.transform.GetChild(4).gameObject.SetActive(false);
             avatar.transform.GetChild(5).gameObject.SetActive(false);
-            avatar.transform.GetChild(6).gameObject.SetActive(false);
 
             avatar.transform.GetChild(1).gameObject.transform.GetChild(9).gameObject.SetActive(false);
             avatar.transform.GetChild(1).gameObject.transform.GetChild(10).gameObject.SetActive(false);
@@ -65,9 +63,17 @@ public class DesactivarAvatar : MonoBehaviour
             avatar.transform.GetChild(2).gameObject.transform.GetChild(8).gameObject.SetActive(true);
 
             //activar pantallas para el juego
+            avatar.transform.GetChild(4).gameObject.SetActive(true);
+
+            //activar colliders de las misiones
             avatar.transform.GetChild(5).gameObject.SetActive(true);
+            //activar colliders de bloqueo
             avatar.transform.GetChild(6).gameObject.SetActive(true);
+        }
+        else if (SceneManager.GetActiveScene().name == "Tutorial") {
+            avatar.transform.GetChild(3).gameObject.SetActive(true);
         }
     }
 
 }
+    
