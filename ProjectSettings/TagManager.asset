@@ -14,6 +14,9 @@ TagManager:
   - DirRedes
   - DirTics
   - FIE
+  - bPapel
+  - bPlastico
+  - bOrganico
   layers:
   - Default
   - TransparentFX
