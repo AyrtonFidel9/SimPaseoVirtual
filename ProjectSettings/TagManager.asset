@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: [PlayerInteractionZone, NPC, NPCgradas, objetivolap]
+  tags:
+  - PlayerInteractionZone
+  - NPC
+  - NPCgradas
+  - objetivolap
+  - Decano
+  - DirSoft
+  - DirTele
+  - DirRedes
+  - DirTics
+  - FIE
   layers:
   - Default
   - TransparentFX

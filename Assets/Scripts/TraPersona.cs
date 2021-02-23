@@ -17,7 +17,7 @@ public class TraPersona : MonoBehaviour
     void Update()
     {
         float valorX = Input.GetAxis("Mouse X") * velocidadMouse * Time.deltaTime;
-        float valorY = 0;
+        float valorY = Input.GetAxis("Mouse Y") * velocidadMouse * Time.deltaTime;
 
         rotacionX -= valorY;
         rotacionX = Mathf.Clamp(rotacionX, -90f, 90f);
