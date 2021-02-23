@@ -7,6 +7,7 @@ public class SistemaPuntuacion : MonoBehaviour
 {
     public TMPro.TextMeshProUGUI Puntuacion;
     public static int puntuacion = 0;
+    public static int retosCompletados = 0;
     // Start is called before the first frame update
     void Start()
     {

@@ -11,8 +11,7 @@ public class LogicaMisionLab : MonoBehaviour
     public int numObjetivos;
     public TextMeshProUGUI textoMision;
     public GameObject botonMision;
-    public string autoridad = "TICS";
-   
+    public static string autoridad = "";
     //Declaración para sonidos
     public AudioSource audioSource;
     public AudioClip clip; //sonido cuando falla
@@ -54,11 +53,16 @@ public class LogicaMisionLab : MonoBehaviour
                         textoMision.text = "Acertó, ahora recoja la foto del director de Telecomunicaciones\n" + "Restantes:" + numObjetivos;
                         autoridad = "TELE";
                     }
-                    else
+                    else if(col.gameObject.tag == "DirTele" ||
+                            col.gameObject.tag == "DirRedes" ||
+                            col.gameObject.tag == "Decano" ||
+                            col.gameObject.tag == "FIE" ||
+                            col.gameObject.tag == "DirSoft")
                     {
                         textoMision.text = "Foto incorrecta, recoja la foto de la directora de TICS";
                         audioSource.PlayOneShot(clip, volume);
                         Timer.m--;
+                        Debug.Log("ACTIVADO CASTIGO DE BAÑOS TICS");
                     }
                     break;
                 case "TELE":
@@ -70,11 +74,16 @@ public class LogicaMisionLab : MonoBehaviour
                         textoMision.text = "Ahora recoja la foto del director de Redes\n" + "Restantes:" + numObjetivos;
                         autoridad = "REDES";
                     }
-                    else
+                    else if(col.gameObject.tag == "DirTics" ||
+                            col.gameObject.tag == "DirRedes" ||
+                            col.gameObject.tag == "Decano" ||
+                            col.gameObject.tag == "FIE" ||
+                            col.gameObject.tag == "DirSoft")
                     {
                         textoMision.text = "Foto incorrecta, recoja la foto del director de Telecomunicaciones";
                         audioSource.PlayOneShot(clip, volume);
                         Timer.m--;
+                        Debug.Log("ACTIVADO CASTIGO DE BAÑOS TELE");
                     }
                     break;
                 case "REDES":
@@ -86,11 +95,16 @@ public class LogicaMisionLab : MonoBehaviour
                         textoMision.text = "Correcto, ahora recoja la foto del decano de la facultad\n" + "Restantes:" + numObjetivos;
                         autoridad = "DECANO";
                     }
-                    else
+                    else if(col.gameObject.tag == "DirTele" ||
+                            col.gameObject.tag == "DirTics" ||
+                            col.gameObject.tag == "Decano" ||
+                            col.gameObject.tag == "FIE" ||
+                            col.gameObject.tag == "DirSoft")
                     {
                         textoMision.text = "Foto incorrecta, recoja la foto del director de Redes\n" + "Restantes:" + numObjetivos;
                         audioSource.PlayOneShot(clip, volume);
                         Timer.m--;
+                        Debug.Log("ACTIVADO CASTIGO DE BAÑOS REDES");
                     }
                     break;
                 case "DECANO":
@@ -102,12 +116,16 @@ public class LogicaMisionLab : MonoBehaviour
                         textoMision.text = "Muy bien,ahora recoja la foto del logotipo de la facultad\n" + "Restantes:" + numObjetivos;
                         autoridad = "LOGO";
                     }
-                    else
+                    else if(col.gameObject.tag == "DirTele" ||
+                            col.gameObject.tag == "DirRedes" ||
+                            col.gameObject.tag == "DirTics" ||
+                            col.gameObject.tag == "FIE" ||
+                            col.gameObject.tag == "DirSoft")
                     {
                         textoMision.text = "Foto incorrecta, recoja la foto del Decano de la facultad";
                         audioSource.PlayOneShot(clip, volume);
                         Timer.m--;
-                 
+                        Debug.Log("ACTIVADO CASTIGO DE BAÑOS DECANO");
                     }
                     break;
                 case "LOGO":
@@ -119,11 +137,16 @@ public class LogicaMisionLab : MonoBehaviour
                         textoMision.text = "Ya casi acabamos, ahora recoja la foto del director de Software\n" + "Restantes:" + numObjetivos;
                         autoridad = "SOFT";
                     }
-                    else
+                    else if(col.gameObject.tag == "DirTele" ||
+                            col.gameObject.tag == "DirRedes" ||
+                            col.gameObject.tag == "Decano" ||
+                            col.gameObject.tag == "DirTics" ||
+                            col.gameObject.tag == "DirSoft")
                     {
                         textoMision.text = "Foto incorrecta, recoja la foto del logotipo de la facultad";
                         audioSource.PlayOneShot(clip, volume);
                         Timer.m--;
+                        Debug.Log("ACTIVADO CASTIGO DE BAÑOS LOGO");
                     }
                     break;
                 case "SOFT":
@@ -137,20 +160,24 @@ public class LogicaMisionLab : MonoBehaviour
                             textoMision.text = "¡Fantástico, misión completada!";
                             SistemaPuntuacion.puntuacion += 10;
                             botonMision.SetActive(true);
+                            autoridad = "";
+                            SistemaPuntuacion.retosCompletados++;
                         }
                     }
-                    else
+                    else if(col.gameObject.tag == "DirTele" ||
+                            col.gameObject.tag == "DirRedes" ||
+                            col.gameObject.tag == "Decano" ||
+                            col.gameObject.tag == "FIE" ||
+                            col.gameObject.tag == "DirTics")
                     {
                         textoMision.text = "Foto incorrecta, recoja la del director de Software";
                         audioSource.PlayOneShot(clip, volume);
                         Timer.m--;
+                        Debug.Log("ACTIVADO CASTIGO DE BAÑOS SOFT");
                     }
                     break;
 
             }
         }
-       
-
-
     }
 }

@@ -69,6 +69,8 @@ public class DesactivarAvatar : MonoBehaviour
             avatar.transform.GetChild(5).gameObject.SetActive(true);
             //activar colliders de bloqueo
             avatar.transform.GetChild(6).gameObject.SetActive(true);
+            //activar misiones
+            avatar.transform.GetChild(7).gameObject.SetActive(true);
         }
         else if (SceneManager.GetActiveScene().name == "Tutorial") {
             avatar.transform.GetChild(3).gameObject.SetActive(true);

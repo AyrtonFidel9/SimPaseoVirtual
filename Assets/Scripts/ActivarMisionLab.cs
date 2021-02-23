@@ -9,6 +9,10 @@ public class ActivarMisionLab : MonoBehaviour
     public AudioClip clip;
     public float volume = 0.5f;
 
+    public GameObject mision;
+
+    public GameObject misionDos;
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -21,6 +25,9 @@ public class ActivarMisionLab : MonoBehaviour
             {
                 mensaje.SetActive(true);
                 audioSource.PlayOneShot(clip, volume);
+                LogicaMisionLab.autoridad = "TICS";
+                mision.SetActive(true);
+                misionDos.SetActive(false);
             }
             catch
             {
