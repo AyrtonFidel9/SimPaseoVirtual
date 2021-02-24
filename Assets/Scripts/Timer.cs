@@ -38,7 +38,6 @@ public class Timer : MonoBehaviour
             {
                 Debug.Log("Fin del juego");
                 Time.timeScale = 0.0f;
-                return;
             }
             else{
                 m--;

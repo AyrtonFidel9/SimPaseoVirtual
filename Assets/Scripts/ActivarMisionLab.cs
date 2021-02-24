@@ -37,4 +37,9 @@ public class ActivarMisionLab : MonoBehaviour
         }
     }
 
+    public void activarMisionBanios()
+    {
+        misionDos.SetActive(true);
+    }
+
 }

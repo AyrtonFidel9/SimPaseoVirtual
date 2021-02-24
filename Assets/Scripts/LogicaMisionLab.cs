@@ -23,9 +23,6 @@ public class LogicaMisionLab : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
         numObjetivos = 6;
-       // textoMision.text = "¡La misión ha comenzado!\nRecoge todas las fotos de las autoridades\n" + "Restantes:" + numObjetivos;
-        //botonMision.SetActive(true);
-        //textoMision.text = "\nRecoge la foto de la directora de la carrera de TICS";
     }
 
     // Update is called once per frame

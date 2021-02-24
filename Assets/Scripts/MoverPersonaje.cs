@@ -31,7 +31,7 @@ public class MoverPersonaje : MonoBehaviour
             z = Input.GetAxis("Vertical");
 
             move = transform.right * x + transform.forward * z;
-           
+
             animacion.SetFloat("VelX", x);
             animacion.SetFloat("VelY", z);
         }

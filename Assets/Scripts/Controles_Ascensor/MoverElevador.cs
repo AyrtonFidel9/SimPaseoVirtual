@@ -19,21 +19,21 @@ public class MoverElevador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(uno))
+        if (Input.GetKeyDown(uno) || Input.GetKeyDown(KeyCode.Alpha1))
         {
             //(pos.position.y == 20.51056 || pos.position.y == 32.48465)
             Debug.Log("Aqui reconoce la tecla uno z=" + pos.position.z + " y="+ pos.position.y + " x="+pos.position.x);
             anim.SetTrigger("uno");
         }
 
-        if (Input.GetKeyDown(dos))
+        if (Input.GetKeyDown(dos) || Input.GetKeyDown(KeyCode.Alpha2))
         {
             //(pos.position.y == 8.536469 || pos.position.y == 32.48465)
             Debug.Log("Aqui reconoce la tecla dos z=" + pos.position.z + " y=" + pos.position.y + " x=" + pos.position.x);
             anim.SetTrigger("dos");
         }
 
-        if (Input.GetKeyDown(tres))
+        if (Input.GetKeyDown(tres) || Input.GetKeyDown(KeyCode.Alpha3))
         {
             //(pos.position.y == 20.51056 || pos.position.y == 8.536469)
             Debug.Log("Aqui reconoce la tecla tres z=" + pos.position.z + " y=" + pos.position.y + " x=" + pos.position.x);

@@ -9,7 +9,7 @@ public class ActivarAyuda : MonoBehaviour
         Time.timeScale = 0.0f;
     }
 
-     public void reanudar()
+    public void reanudar()
     {
         Time.timeScale = 1.0f;
     }
