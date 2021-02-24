@@ -24,9 +24,18 @@ public class SistemaPuntuacion : MonoBehaviour
         actualizarPuntaje();
         if(retosCompletados == 2)
         {
-            matriculado = true;
-            dialogoWaitSecre.SetActive(false);
-            dialogoFinalizar.SetActive(true);
+            try
+            {
+                matriculado = true;
+                dialogoWaitSecre.SetActive(false);
+                dialogoFinalizar.SetActive(true);    
+
+            }
+            catch 
+            {
+                
+            }
+            
             
         }
     }

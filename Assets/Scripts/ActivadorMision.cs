@@ -34,4 +34,8 @@ public class ActivadorMision : MonoBehaviour
     {
         Time.timeScale = 1.0f;
     }
+    public void destruir(GameObject elem)
+    {
+        Destroy(elem);
+    }
 }

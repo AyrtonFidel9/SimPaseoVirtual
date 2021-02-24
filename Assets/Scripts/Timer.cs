@@ -7,6 +7,7 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
+    public GameObject panelperdida;
     public int minutos;
     public int segundos;
     public TMPro.TextMeshProUGUI txtTime;
@@ -32,11 +33,16 @@ public class Timer : MonoBehaviour
     public void actualizarTimer()
     {
         s--;
+        if(m < 0)
+        {
+                panelperdida.SetActive(true);
+                Time.timeScale = 0.0f;
+        }
         if(s < 0)
         {
             if(m <= 0)
             {
-                Debug.Log("Fin del juego");
+                panelperdida.SetActive(true);
                 Time.timeScale = 0.0f;
             }
             else{

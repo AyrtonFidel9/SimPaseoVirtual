@@ -5,9 +5,10 @@ using UnityEngine;
 public class BloqueoLugares : MonoBehaviour
 {
     public GameObject mensaje;
+    public AudioSource audioSource;
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -20,6 +21,7 @@ public class BloqueoLugares : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             mensaje.SetActive(true);
+            audioSource.Play();
             Time.timeScale = 0.0f;
         }
     }

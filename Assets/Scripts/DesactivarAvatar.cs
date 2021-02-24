@@ -75,6 +75,10 @@ public class DesactivarAvatar : MonoBehaviour
         else if (SceneManager.GetActiveScene().name == "Tutorial") {
             avatar.transform.GetChild(3).gameObject.SetActive(true);
         }
+        else if(SceneManager.GetActiveScene().name == "Tutorial")
+        {
+            
+        }
     }
 
 }
